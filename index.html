@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Circle Progress Bar</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="percent">
+			<svg width="210" height="210">
+				<linearGradient id="my-gradient"
+				x1="0%" y1="100%" x2="100%" y2="0%">
+					<stop offset="0%" stop-color="magenta"/>
+					<stop offset="75%" stop-color="limegreen"/>
+				</linearGradient>
+				<circle cx="100" cy="100" r="100"></circle>
+				<circle cx="100" cy="100" r="100"></circle>
+			</svg>
+			<div class="number">
+				<h2>67<span>%</span></h2>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.percent {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  height: 250px;
+}
+
+svg {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-dasharray: 628;
+  stroke-dashoffset: 628;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+
+circle:nth-child(2) {
+  stroke-dashoffset: 0;
+  stroke: lightgray;
+}
+
+circle:last-child {
+  stroke-dashoffset: calc(628*(100 - 67)/100);
+  stroke-linecap: round;
+  stroke: url(#my-gradient);
+}
+
+.number {
+  position: absolute;
+}
+
+.number h2 {
+  font-size: 60px;
+}
+
+.number span {
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */

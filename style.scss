@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.percent {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 250px;
+}
+
+svg {
+	transform: rotate(-90deg);
+}
+
+circle {
+	fill: none;
+	stroke-width: 10;
+	stroke-dasharray: 628;
+	stroke-dashoffset: 628;
+	transform: translate(5px, 5px);
+	&:nth-child(2) {
+		stroke-dashoffset: 0;
+		stroke: lightgray;
+	}
+	&:last-child {
+		stroke-dashoffset: calc(628*(100 - 67)/100);
+		stroke-linecap: round;
+		stroke: url(#my-gradient);
+	}
+}
+
+.number {
+	position: absolute;
+	h2 {
+		font-size: 60px;
+	}
+	span {
+		font-size: 30px;
+	}
+}
